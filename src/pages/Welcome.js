@@ -9,7 +9,6 @@ import {
 } from "@material-ui/core";
 import { TRANSITION_TIME } from "common/commonProps";
 import TestSandbox from "components/TestSandbox";
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import teh from "../assets/teh.png";
@@ -42,13 +41,13 @@ const Welcome = () => {
   const dispatch = useDispatch();
 
   const themeColor = useSelector((state) => state.themeColor);
-
   const classes = useStyles({ themeColor });
 
-  const [flavorList] = useState(["purple", "#b60000", "#006800", "#000080"]);
+  const flavorList = ["purple", "#b60000", "#006800", "#000080"];
+
   //toggle TRUE to test
-  const [isTestSandbox] = useState(false);
-  const [isTestRedux] = useState(false);
+  const isTestSandbox = false;
+  const isTestRedux = false;
 
   return (
     <div>
