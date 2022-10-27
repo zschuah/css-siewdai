@@ -4,7 +4,7 @@ import hljs from "highlight.js";
 import "highlight.js/styles/vs2015.css";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Switch } from "react-router-dom";
+import { Switch, useLocation } from "react-router-dom";
 import styles from "./App.module.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
@@ -22,8 +22,9 @@ const useStyles = makeStyles({
 });
 
 function App() {
-  const themeColor = useSelector((state) => state.themeColor);
+  const location = useLocation();
 
+  const themeColor = useSelector((state) => state.themeColor);
   const classes = useStyles({ themeColor });
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -31,6 +32,10 @@ function App() {
   useEffect(() => {
     hljs.configure({ ignoreUnescapedHTML: true });
   }, []);
+
+  useEffect(() => {
+    hljs.highlightAll();
+  }, [location.pathname]);
 
   return (
     <div className="App">
@@ -44,7 +49,7 @@ function App() {
         <Sidebar setIsDrawerOpen={setIsDrawerOpen} />
       </SwipeableDrawer>
 
-      <div style={{ marginTop: "3rem" }}></div>
+      <div style={{ marginTop: "3.5rem" }}></div>
 
       <div className={classes.styledContainer}>
         <Container>
@@ -58,8 +63,6 @@ function App() {
           <small>Copyright © 2022 zschuah. All Rights Reserved.</small>
         </Container>
       </div>
-
-      <div style={{ marginTop: "1rem" }}></div>
     </div>
   );
 }

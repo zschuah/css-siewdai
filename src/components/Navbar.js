@@ -21,15 +21,19 @@ const Navbar = ({ setIsDrawerOpen }) => {
   const location = useLocation();
 
   const themeColor = useSelector((state) => state.themeColor);
-
   const classes = useStyles({ themeColor });
 
+  //Toggle TRUE to see currentIndex
+  const isShowCurrentIndex = false;
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  //Pass in -1 or 1 so that we can navigate to PREVIOUS or NEXT element in routeAll array
   const handlePath = (direction) => {
     history.push(routeAll[currentIndex + direction].props.path);
   };
 
+  //Will automatically setCurrentIndex when PAGE CHANGES
+  //setCurrentIndex will ENABLE or DISABLE left and right arrows
   useEffect(() => {
     let foundIndex = routeAll.findIndex(
       (route) => route.props.path === location.pathname
@@ -53,7 +57,7 @@ const Navbar = ({ setIsDrawerOpen }) => {
         <p className={styles.slogan}>CSS, with a little sugar in it</p>
 
         <div style={{ marginLeft: "auto" }}>
-          {/* <span>{currentIndex}</span> */}
+          {isShowCurrentIndex && <span>{currentIndex}</span>}
           <IconButton
             color="inherit"
             onClick={() => handlePath(-1)}

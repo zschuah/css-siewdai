@@ -1,17 +1,11 @@
 import { makeStyles } from "@material-ui/core";
 import { displayProps } from "common/commonProps";
-import hljs from "highlight.js";
-import { useEffect } from "react";
 import styles from "./CircularSwapping.module.css";
 
 const useStyles = makeStyles(displayProps);
 
 const CircularSwapping = () => {
   const classes = useStyles();
-
-  useEffect(() => {
-    hljs.highlightAll();
-  }, []);
 
   return (
     <div>
