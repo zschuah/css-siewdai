@@ -55,7 +55,7 @@ function App() {
         <Container>
           <Switch>{routeAll}</Switch>
         </Container>
-        <div style={{ marginTop: "10rem" }}></div>
+        <div style={{ marginTop: "20vh" }}></div>
       </div>
 
       <div className={`${classes.styledFooter} ${styles.footer}`}>
