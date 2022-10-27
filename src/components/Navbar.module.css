@@ -1,0 +1,15 @@
+.appbarTitle {
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.slogan {
+  margin-left: 1rem;
+  font-style: italic;
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .slogan {
+    display: none;
+  }
+}

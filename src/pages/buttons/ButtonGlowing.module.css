@@ -1,0 +1,36 @@
+.btn {
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  font-size: 40px;
+  border: 5px solid white;
+  padding: 40px 80px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover {
+  background: #f44336;
+}
+.btn::before {
+  content: "";
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s;
+}
+.btn:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .btn {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+}

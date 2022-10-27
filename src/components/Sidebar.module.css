@@ -1,0 +1,17 @@
+.intro {
+  padding: 1rem;
+}
+
+.title {
+  margin: 0;
+}
+.title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ff;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.8rem;
+}

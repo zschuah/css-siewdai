@@ -1,0 +1,40 @@
+.btn {
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  font-size: 40px;
+  border: 5px solid white;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "YEAH!";
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #f44336;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+
+  /* To center text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover::before {
+  transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .btn {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+}
