@@ -7,6 +7,7 @@ import CircularSwapping from "pages/buttons/CircularSwapping";
 import LayersSwapping from "pages/buttons/LayersSwapping";
 import RotatingButton from "pages/buttons/RotatingButton";
 import RotatingThreeLayers from "pages/buttons/RotatingThreeLayers";
+import SplittedButton from "pages/buttons/SplittedButton";
 import SwipeButton from "pages/buttons/SwipeButton";
 import TextScaling from "pages/buttons/TextScaling";
 import ThreeCircles from "pages/buttons/ThreeCircles";
@@ -67,6 +68,11 @@ export const routeButtons = [
     path="/button-hover-2"
     component={ButtonHover2}
     key="Button Hover 2"
+  />,
+  <Route
+    path="/splitted-button"
+    component={SplittedButton}
+    key="Splitted Button"
   />,
 ];
 

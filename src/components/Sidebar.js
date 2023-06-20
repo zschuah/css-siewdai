@@ -40,7 +40,7 @@ const Sidebar = ({ setIsDrawerOpen }) => {
         <h3 className={styles.title} onClick={() => handlePath("/")}>
           CSS Siewdai
         </h3>
-        <p className={styles.subtitle}>Updated on Aug 2022</p>
+        <p className={styles.subtitle}>Updated on Oct 2022</p>
       </div>
 
       <Divider />
