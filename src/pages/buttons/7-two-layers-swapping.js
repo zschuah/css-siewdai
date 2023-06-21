@@ -21,10 +21,7 @@ const Styled2 = styled(Styled1)`
   &::before {
     content: "Hover Me";
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    inset: 0;
     background: #fffa65;
     color: #262626;
     display: flex;
@@ -35,10 +32,7 @@ const Styled2 = styled(Styled1)`
   &::after {
     content: "Hover Me";
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    inset: 0;
     background: #fffa65;
     color: #262626;
     display: flex;

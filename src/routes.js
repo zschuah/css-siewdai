@@ -1,19 +1,23 @@
-import ButtonGlowing from "pages/buttons/6-button-glowing";
-import ButtonHover from "pages/buttons/3-button-hover";
-import ButtonHover2 from "pages/buttons/13-button-hover-2";
-import ButtonStretching from "pages/buttons/4-button-stretching";
-import ButtonSwipeText from "pages/buttons/5-button-swipe-text";
-import CircularSwapping from "pages/buttons/9-circular-swapping";
-import LayersSwapping from "pages/buttons/11-layers-swapping";
+import Welcome from "pages/Welcome";
 import RotatingButton from "pages/buttons/1-rotating-button";
 import RotatingThreeLayers from "pages/buttons/10-rotating-three-layers";
-import SplittedButton from "pages/buttons/14-splitted-button";
-import SwipeButton from "pages/buttons/2-swipe-button";
-import TextScaling from "pages/buttons/8-text-scaling";
+import LayersSwapping from "pages/buttons/11-layers-swapping";
 import ThreeCircles from "pages/buttons/12-three-circles";
+import ButtonHover2 from "pages/buttons/13-button-hover-2";
+import SplittedButton from "pages/buttons/14-splitted-button";
+import BorderSwapping from "pages/buttons/15-border-swapping";
+import SwipeButton from "pages/buttons/2-swipe-button";
+import ButtonHover from "pages/buttons/3-button-hover";
+import ButtonStretching from "pages/buttons/4-button-stretching";
+import ButtonSwipeText from "pages/buttons/5-button-swipe-text";
+import ButtonGlowing from "pages/buttons/6-button-glowing";
 import TwoLayersSwapping from "pages/buttons/7-two-layers-swapping";
-import Welcome from "pages/Welcome";
+import TextScaling from "pages/buttons/8-text-scaling";
+import CircularSwapping from "pages/buttons/9-circular-swapping";
 import { Route } from "react-router-dom";
+import ImageEffect1 from "pages/images/ImageEffect1";
+import ImageEffect2 from "pages/images/ImageEffect2";
+import ImageEffect3 from "pages/images/ImageEffect3";
 
 export const routeWelcome = [
   <Route exact path="/" component={Welcome} key="/" />,
@@ -74,6 +78,29 @@ export const routeButtons = [
     component={SplittedButton}
     key="Splitted Button"
   />,
+  <Route
+    path="/border-swapping"
+    component={BorderSwapping}
+    key="Border Swapping"
+  />,
 ];
 
-export const routeAll = [...routeWelcome, ...routeButtons];
+export const routeImages = [
+  <Route
+    path="/image-effect-1"
+    component={ImageEffect1}
+    key="Image Effect 1"
+  />,
+  <Route
+    path="/image-effect-2"
+    component={ImageEffect2}
+    key="Image Effect 2"
+  />,
+  <Route
+    path="/image-effect-3"
+    component={ImageEffect3}
+    key="Image Effect 3"
+  />,
+];
+
+export const routeAll = [...routeWelcome, ...routeButtons, ...routeImages];

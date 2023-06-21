@@ -22,10 +22,7 @@ const Styled2 = styled(Styled1)`
     content: "YEAH!";
     color: white;
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    inset: 0;
     background: #f44336;
     transform: translateY(-100%);
     transition: all 0.5s;

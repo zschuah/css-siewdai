@@ -125,7 +125,7 @@ const ThreeCircles = () => {
       <div className={classes.codeBox}>
         <PreCode>{handleRules(Styled1)}</PreCode>
         <PreCode>
-          {handleRules(Styled2) + ".btnSpan" + Styled2.componentStyle.rules[2]}
+          {handleRules(Styled2) + ".btnSpan" + handleRules(Styled2, 2)}
         </PreCode>
         <PreCode>{".btnSpan {" + handleRules(StyledSpan) + "}"}</PreCode>
       </div>

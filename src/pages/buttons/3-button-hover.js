@@ -21,10 +21,7 @@ const Styled2 = styled(Styled1)`
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: #262626;
     transition: all 0.5s;
     transform: rotateX(90deg);

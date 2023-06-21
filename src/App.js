@@ -60,7 +60,7 @@ function App() {
 
       <div className={`${classes.styledFooter} ${styles.footer}`}>
         <Container>
-          <small>Copyright © 2022 zschuah. All Rights Reserved.</small>
+          <small>Copyright © 2023 zschuah. All Rights Reserved.</small>
         </Container>
       </div>
     </div>

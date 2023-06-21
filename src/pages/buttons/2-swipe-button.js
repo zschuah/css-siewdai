@@ -22,10 +22,7 @@ const Styled2 = styled(Styled1)`
   &::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    inset: 0;
     background: #351435;
     z-index: -1;
     transform: translateX(-100%);

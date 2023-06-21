@@ -22,10 +22,7 @@ const Styled2 = styled(Styled1)`
   &::before {
     content: "button";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: #2ce771;
     /* To center text */
     display: flex;
@@ -47,10 +44,7 @@ const StyledFinal = styled(Styled2)`
   &::after {
     content: "button";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: red;
     /* To center text */
     display: flex;

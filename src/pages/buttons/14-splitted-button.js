@@ -125,8 +125,10 @@ const SplittedButton = () => {
         <PreCode>{handleRules(Styled1)}</PreCode>
         <PreCode>
           {handleRules(Styled2) +
-            Styled2.componentStyle.rules[2] +
-            Styled2.componentStyle.rules[4]}
+            ".btnSpan" +
+            handleRules(Styled2, 2) +
+            ".btnSpan" +
+            handleRules(Styled2, 4)}
         </PreCode>
         <PreCode>{".btnSpan {" + handleRules(StyledSpan) + "}"}</PreCode>
       </div>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const handleRules = (styled) => {
-  return styled.componentStyle.rules[0];
+export const handleRules = (styled, num) => {
+  return styled.componentStyle.rules[num || 0];
 };
 
 const StyledCode = styled.code`

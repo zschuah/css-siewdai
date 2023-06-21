@@ -19,11 +19,8 @@ const Styled2 = styled(Styled1)`
   &::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
     background: yellow;
-    height: 100%;
-    width: 100%;
+    inset: 0;
     z-index: -1;
     transform-origin: bottom left;
     transform: rotate(-90deg);
