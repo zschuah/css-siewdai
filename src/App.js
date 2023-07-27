@@ -14,6 +14,7 @@ const useStyles = makeStyles({
   styledContainer: {
     border: (props) => `5px solid ${props.themeColor}`,
     transition: "all " + TRANSITION_TIME,
+    minHeight: "91vh",
   },
   styledFooter: {
     background: (props) => props.themeColor,
@@ -55,7 +56,7 @@ function App() {
         <Container>
           <Switch>{routeAll}</Switch>
         </Container>
-        <div style={{ marginTop: "20vh" }}></div>
+        <div style={{ marginTop: "10vh" }}></div>
       </div>
 
       <div className={`${classes.styledFooter} ${styles.footer}`}>

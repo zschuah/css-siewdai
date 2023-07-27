@@ -18,6 +18,8 @@ import { Route } from "react-router-dom";
 import ImageEffect1 from "pages/images/ImageEffect1";
 import ImageEffect2 from "pages/images/ImageEffect2";
 import ImageEffect3 from "pages/images/ImageEffect3";
+import ImageEffect4 from "pages/images/ImageEffect4";
+import BorderGrowing from "pages/buttons/16-border-growing";
 
 export const routeWelcome = [
   <Route exact path="/" component={Welcome} key="/" />,
@@ -83,6 +85,11 @@ export const routeButtons = [
     component={BorderSwapping}
     key="Border Swapping"
   />,
+  <Route
+    path="/border-growing"
+    component={BorderGrowing}
+    key="Border Growing"
+  />,
 ];
 
 export const routeImages = [
@@ -100,6 +107,11 @@ export const routeImages = [
     path="/image-effect-3"
     component={ImageEffect3}
     key="Image Effect 3"
+  />,
+  <Route
+    path="/image-effect-4"
+    component={ImageEffect4}
+    key="Image Effect 4"
   />,
 ];
 
